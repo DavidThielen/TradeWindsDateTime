@@ -59,8 +59,8 @@ namespace TradeWindsDateTime
 
 		public DateTime ConvertFromUtc(DateTime dateTime)
 		{
-            if (dateTime.Kind != DateTimeKind.Utc)
-                dateTime = DateTime.SpecifyKind(dateTime, DateTimeKind.Utc);
+			if (dateTime.Kind != DateTimeKind.Utc)
+				dateTime = DateTime.SpecifyKind(dateTime, DateTimeKind.Utc);
 			return TimeZoneInfo.ConvertTimeFromUtc(dateTime, _timeZoneInfo);
 		}
 

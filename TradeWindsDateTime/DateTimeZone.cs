@@ -84,7 +84,7 @@ namespace TradeWindsDateTime
 		/// <summary>
 		/// returns the date part of the DateTime in the TimeZoneId.
 		/// </summary>
-		public DateTimeZone Date => new (DateTime.Date, TimeZoneId);
+		public DateTimeZone Date => new(DateTime.Date, TimeZoneId);
 
 		/// <summary>
 		/// Returns a new DateTimeZone that adds the specified number of days to the value of this instance.
@@ -224,9 +224,9 @@ namespace TradeWindsDateTime
 		/// <inheritdoc />
 		public int CompareTo(DateTimeZone? other)
 		{
-			if (ReferenceEquals(this, other)) 
+			if (ReferenceEquals(this, other))
 				return 0;
-			if (ReferenceEquals(null, other)) 
+			if (ReferenceEquals(null, other))
 				return 1;
 
 			// if they have the same timezone, compare the dates
@@ -255,11 +255,11 @@ namespace TradeWindsDateTime
 		/// <inheritdoc />
 		public override bool Equals(object? obj)
 		{
-			if (ReferenceEquals(null, obj)) 
+			if (ReferenceEquals(null, obj))
 				return false;
-			if (ReferenceEquals(this, obj)) 
+			if (ReferenceEquals(this, obj))
 				return true;
-			if (obj.GetType() != GetType()) 
+			if (obj.GetType() != GetType())
 				return false;
 			return Equals((DateTimeZone)obj);
 		}
