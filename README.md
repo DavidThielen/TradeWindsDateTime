@@ -9,3 +9,7 @@ The DateTimeZone can be saved in a database as the DateTime & the TimeZoneId (st
 This is under the MIT license. If you find this very useful I ask (not a requirement) that you consider reading my book [I DON’T KNOW WHAT I’M DOING!: How a Programmer Became a Successful Startup CEO](https://a.co/d/bEpDlJR).
 
 And if you like it, please review it on Amazon and/or GoodReads. The number of legitimate reviews helps a lot. Much appreciated.
+
+## NodaTime
+
+If you need significant additional datetime functionality, use [nodatime](https://nodatime.org/) instead of this library. This library is useful if the only additional datetime functionality you need is the DateTimeZone class.
