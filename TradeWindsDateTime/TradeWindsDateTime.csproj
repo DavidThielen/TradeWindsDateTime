@@ -4,7 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-	<Version>1.0.0.1</Version>
+	<Version>1.0.0.2</Version>
 	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	<Title>DateTimeZone is DateTime+TimeZone</Title>
 	<Authors>DavidThielen</Authors>
@@ -17,9 +17,14 @@
 	<RepositoryType>git</RepositoryType>
 	<PackageTags>DateTime; TimeZone</PackageTags>
 	<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+	<PackageIcon>date_time.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\date_time.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="..\LICENSE.txt">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>

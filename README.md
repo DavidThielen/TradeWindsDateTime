@@ -4,11 +4,11 @@ These are some classes I created for handling the DateTime. The primary class is
 
 When working with DateTime across timezones, do not use UTC Offset - that will always bite you in the ass sooner or later. Daylight Savings Time start/end is a political decision and it changes regularly.
 
-The DateTimeZone can be saved in a database as the DateTime & the TimeZoneId (string). Save and use DateTimeZone.
+The DateTimeZone can be saved in a database as the DateTime & the TimeZoneId (string). Entity Framework handles a DateTimeZone property fine, nothing extra is needed (it saves it as 2 columns).
 
-This is under the MIT license. If you find this very useful I ask (not a requirement) that you consider reading my book [I DON’T KNOW WHAT I’M DOING!: How a Programmer Became a Successful Startup CEO](https://a.co/d/bEpDlJR).
-
-And if you like it, please review it on Amazon and/or GoodReads. The number of legitimate reviews helps a lot. Much appreciated.
+> This is under the MIT license. If you find this useful I ask (not a requirement) that you consider reading my book [I DON’T KNOW WHAT I’M DOING!: How a Programmer Became a Successful Startup CEO](https://a.co/d/bEpDlJR).
+> 
+> And if you like it, please review it on Amazon and/or GoodReads. The number of legitimate reviews helps a lot. Much appreciated.
 
 ## NodaTime
 
